@@ -6,6 +6,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         genre: DataTypes.STRING,
         platform: DataTypes.STRING,
+        interest: DataTypes.INTEGER,
         startedPlaying: DataTypes.BOOLEAN,
         length: {
             type: DataTypes.DECIMAL(10,2),

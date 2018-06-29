@@ -8,6 +8,7 @@ router.post("/create", (req, res) => {
     let name = req.body.backlogGame.name;
     let genre = req.body.backlogGame.genre;
     let platform = req.body.backlogGame.platform;
+    let interest = req.body.backlogGame.interest;
     let startedPlaying = req.body.backlogGame.startedPlaying;
     let length = req.body.backlogGame.length;
 
@@ -15,6 +16,7 @@ router.post("/create", (req, res) => {
         name: name,
         genre: genre,
         platform: platform,
+        interest: interest,
         startedPlaying: startedPlaying,
         length: length,
         owner: owner
@@ -38,6 +40,7 @@ router.put("/update/:id", (req, res) => {
     let name = req.body.backlogGame.name;
     let genre = req.body.backlogGame.genre;
     let platform = req.body.backlogGame.platform;
+    let interest = req.body.backlogGame.interest;
     let startedPlaying = req.body.backlogGame.startedPlaying;
     let length = req.body.backlogGame.length;
 
@@ -45,6 +48,7 @@ router.put("/update/:id", (req, res) => {
         name: name,
         genre: genre,
         platform: platform,
+        interest: interest,
         startedPlaying: startedPlaying,
         length: length,
     },

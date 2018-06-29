@@ -6,6 +6,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         genre: DataTypes.STRING,
         platform: DataTypes.STRING,
+        interest: DataTypes.INTEGER,
         owner: DataTypes.INTEGER
     });
 }
