@@ -43,6 +43,7 @@ router.put("/update/:id", (req, res) => {
     let interest = req.body.backlogGame.interest;
     let startedPlaying = req.body.backlogGame.startedPlaying;
     let length = req.body.backlogGame.length;
+    let finished = req.body.backlogGame.finished;
 
     Backlog.update({
         name: name,
@@ -51,6 +52,7 @@ router.put("/update/:id", (req, res) => {
         interest: interest,
         startedPlaying: startedPlaying,
         length: length,
+        finished: finished
     },
     {where: {id: data}
     })
