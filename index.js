@@ -20,6 +20,6 @@ app.use(require("./middleware/validation"));
 app.use("/blmanager/backlog", backlog);
 app.use("/blmanager/wishlist", wishlist);
 
-app.listen(3000, () => {
-    console.log("Server is active.  Listening on 3000")
+app.listen(process.env.PORT, () => {
+    console.log(`Server is active.  Listening on ${process.env.PORT}`)
 });

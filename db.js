@@ -1,6 +1,6 @@
 const Sequelize = require("sequelize");
 
-const sequelize = new Sequelize ("backlogDatabase", "postgres", process.env.PGPASS, {
+const sequelize = new Sequelize (process.env.DBNAME, process.env.PGUSER, process.env.PGPASS, {
     host: "localhost",
     dialect: "postgres"
 });
